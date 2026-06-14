@@ -1,0 +1,28 @@
+programa
+{
+	funcao inicio()
+	{
+		real saldo, credito
+
+		escreva("Saldo médio: ")
+		leia(saldo)
+
+		credito = 0
+
+		se (saldo >= 201 e saldo <= 400)
+		{
+			credito = saldo * 0.20
+		}
+		senao se (saldo >= 401 e saldo <= 600)
+		{
+			credito = saldo * 0.30
+		}
+		senao se (saldo > 600)
+		{
+			credito = saldo * 0.40
+		}
+
+		escreva("Saldo médio: ", saldo)
+		escreva("\nCrédito: ", credito)
+	}
+}
