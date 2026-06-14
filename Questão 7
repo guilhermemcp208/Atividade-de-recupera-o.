@@ -1,0 +1,14 @@
+programa
+{
+    funcao inicio()
+    {
+        real custoFabrica, custoConsumidor
+
+        escreva("Digite o custo de fábrica do carro: ")
+        leia(custoFabrica)
+
+        custoConsumidor = custoFabrica + (custoFabrica * 0.28) + (custoFabrica * 0.45)
+
+        escreva("\nCusto ao consumidor: R$ ", custoConsumidor)
+    }
+}
