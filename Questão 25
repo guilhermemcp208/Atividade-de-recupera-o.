@@ -1,0 +1,59 @@
+programa
+{
+	funcao inicio()
+	{
+		inteiro i
+		real a, b, c, aux
+
+		escreva("Digite i: ")
+		leia(i)
+
+		escreva("Digite A: ")
+		leia(a)
+
+		escreva("Digite B: ")
+		leia(b)
+
+		escreva("Digite C: ")
+		leia(c)
+
+		se (a > b)
+		{
+			aux = a
+			a = b
+			b = aux
+		}
+
+		se (a > c)
+		{
+			aux = a
+			a = c
+			c = aux
+		}
+
+		se (b > c)
+		{
+			aux = b
+			b = c
+			c = aux
+		}
+
+		escolha(i)
+		{
+			caso 1:
+				escreva(a, " ", b, " ", c)
+				pare
+
+			caso 2:
+				escreva(c, " ", b, " ", a)
+				pare
+
+			caso 3:
+				escreva(a, " ", c, " ", b)
+				pare
+
+			caso contrario:
+				escreva("Valor de i inválido.")
+		}
+	}
+}
