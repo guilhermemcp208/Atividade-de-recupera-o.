@@ -1,0 +1,28 @@
+programa
+{
+	funcao inicio()
+	{
+		inteiro termos, i, j
+		inteiro fatorial
+		real E
+
+		para (termos = 3; termos <= 5; termos++)
+		{
+			E = 1
+
+			para (i = 1; i <= termos; i++)
+			{
+				fatorial = 1
+
+				para (j = 1; j <= i; j++)
+				{
+					fatorial = fatorial * j
+				}
+
+				E = E + (1.0 / fatorial)
+			}
+
+			escreva("E com ", termos, " termos = ", E, "\n")
+		}
+	}
+}
