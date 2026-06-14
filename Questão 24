@@ -1,0 +1,24 @@
+programa
+{
+	funcao inicio()
+	{
+		inteiro inicio, fim, duracao
+
+		escreva("Hora de início: ")
+		leia(inicio)
+
+		escreva("Hora de término: ")
+		leia(fim)
+
+		se (fim > inicio)
+		{
+			duracao = fim - inicio
+		}
+		senao
+		{
+			duracao = (24 - inicio) + fim
+		}
+
+		escreva("Duração: ", duracao, " horas")
+	}
+}
