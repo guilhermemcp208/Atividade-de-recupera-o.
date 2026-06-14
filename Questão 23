@@ -1,0 +1,31 @@
+programa
+{
+	inclua biblioteca Matematica --> mat
+
+	funcao inicio()
+	{
+		real a, b, c
+		real s, area
+
+		escreva("Lado A: ")
+		leia(a)
+
+		escreva("Lado B: ")
+		leia(b)
+
+		escreva("Lado C: ")
+		leia(c)
+
+		se (a < b + c e b < a + c e c < a + b)
+		{
+			s = (a + b + c) / 2
+			area = mat.raiz(s * (s - a) * (s - b) * (s - c), 2)
+
+			escreva("Área = ", area)
+		}
+		senao
+		{
+			escreva("Não forma um triângulo.")
+		}
+	}
+}
