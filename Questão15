@@ -1,0 +1,32 @@
+programa
+{
+    funcao inicio()
+    {
+        inteiro numero
+
+        escreva("Digite um número inteiro: ")
+        leia(numero)
+
+        se (numero % 2 == 0)
+        {
+            escreva("O número é par.")
+        }
+        senao
+        {
+            escreva("O número é ímpar.")
+        }
+
+        se (numero > 0)
+        {
+            escreva("\nO número é positivo.")
+        }
+        senao se (numero < 0)
+        {
+            escreva("\nO número é negativo.")
+        }
+        senao
+        {
+            escreva("\nO número é zero.")
+        }
+    }
+}
