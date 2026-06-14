@@ -1,0 +1,47 @@
+programa
+{
+    funcao inicio()
+    {
+        inteiro codigo
+        real n1, n2, n3
+        real media
+
+        escreva("Código do aluno: ")
+        leia(codigo)
+
+        escreva("Primeira nota: ")
+        leia(n1)
+
+        escreva("Segunda nota: ")
+        leia(n2)
+
+        escreva("Terceira nota: ")
+        leia(n3)
+
+        se (n1 >= n2 e n1 >= n3)
+        {
+            media = (n1 * 4 + n2 * 3 + n3 * 3) / 10
+        }
+        senao se (n2 >= n1 e n2 >= n3)
+        {
+            media = (n2 * 4 + n1 * 3 + n3 * 3) / 10
+        }
+        senao
+        {
+            media = (n3 * 4 + n1 * 3 + n2 * 3) / 10
+        }
+
+        escreva("\nCódigo: ", codigo)
+        escreva("\nNotas: ", n1, " ", n2, " ", n3)
+        escreva("\nMédia: ", media)
+
+        se (media >= 5)
+        {
+            escreva("\nAPROVADO")
+        }
+        senao
+        {
+            escreva("\nREPROVADO")
+        }
+    }
+}
