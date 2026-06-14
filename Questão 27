@@ -1,0 +1,33 @@
+programa
+{
+	funcao inicio()
+	{
+		real ipi, valor1, valor2, total
+		inteiro cod1, cod2, qtd1, qtd2
+
+		escreva("IPI (%): ")
+		leia(ipi)
+
+		escreva("Código da peça 1: ")
+		leia(cod1)
+
+		escreva("Valor da peça 1: ")
+		leia(valor1)
+
+		escreva("Quantidade da peça 1: ")
+		leia(qtd1)
+
+		escreva("Código da peça 2: ")
+		leia(cod2)
+
+		escreva("Valor da peça 2: ")
+		leia(valor2)
+
+		escreva("Quantidade da peça 2: ")
+		leia(qtd2)
+
+		total = (valor1 * qtd1 + valor2 * qtd2) * (ipi / 100 + 1)
+
+		escreva("\nValor total: R$ ", total)
+	}
+}
