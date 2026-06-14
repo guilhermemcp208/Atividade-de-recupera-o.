@@ -1,0 +1,36 @@
+programa
+{
+	funcao inicio()
+	{
+		inteiro cargo
+		real salario, novoSalario
+
+		escreva("Salário: ")
+		leia(salario)
+
+		escreva("Código do cargo: ")
+		leia(cargo)
+
+		escolha(cargo)
+		{
+			caso 101:
+				novoSalario = salario * 1.10
+				pare
+
+			caso 102:
+				novoSalario = salario * 1.20
+				pare
+
+			caso 103:
+				novoSalario = salario * 1.30
+				pare
+
+			caso contrario:
+				novoSalario = salario * 1.40
+		}
+
+		escreva("\nSalário antigo: ", salario)
+		escreva("\nNovo salário: ", novoSalario)
+		escreva("\nDiferença: ", novoSalario - salario)
+	}
+}
