@@ -1,0 +1,87 @@
+programa
+{
+	funcao inicio()
+	{
+		inteiro opcao
+		real n1, n2, n3, media
+
+		escreva("Primeira nota: ")
+		leia(n1)
+
+		escreva("Segunda nota: ")
+		leia(n2)
+
+		escreva("Terceira nota: ")
+		leia(n3)
+
+		escreva("\n1 - Aritmética")
+		escreva("\n2 - Ponderada")
+		escreva("\n3 - Harmônica")
+		escreva("\nEscolha: ")
+		leia(opcao)
+
+		escolha (opcao)
+		{
+			caso 1:
+				media = (n1 + n2 + n3) / 3
+				pare
+
+			caso 2:
+				media = (n1 * 3 + n2 * 3 + n3 * 4) / 10
+				pare
+
+			caso 3:
+				media = 3 / ((1 / n1) + (1 / n2) + (1 / n3))
+				pare
+
+			caso contrario:
+				escreva("Opção inválida!")
+				retorne
+		}
+
+		escreva("Média = ", media)
+	}
+}programa
+{
+	funcao inicio()
+	{
+		inteiro opcao
+		real n1, n2, n3, media
+
+		escreva("Primeira nota: ")
+		leia(n1)
+
+		escreva("Segunda nota: ")
+		leia(n2)
+
+		escreva("Terceira nota: ")
+		leia(n3)
+
+		escreva("\n1 - Aritmética")
+		escreva("\n2 - Ponderada")
+		escreva("\n3 - Harmônica")
+		escreva("\nEscolha: ")
+		leia(opcao)
+
+		escolha (opcao)
+		{
+			caso 1:
+				media = (n1 + n2 + n3) / 3
+				pare
+
+			caso 2:
+				media = (n1 * 3 + n2 * 3 + n3 * 4) / 10
+				pare
+
+			caso 3:
+				media = 3 / ((1 / n1) + (1 / n2) + (1 / n3))
+				pare
+
+			caso contrario:
+				escreva("Opção inválida!")
+				retorne
+		}
+
+		escreva("Média = ", media)
+	}
+}
